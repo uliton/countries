@@ -1,0 +1,78 @@
+.select {
+  position: relative;
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    
+    &--dark {
+      color: $darkModeText;
+      background-color: $darkElementBackground;
+      box-shadow: 0 0 8px $darkShadow;
+    }
+    
+    &--light {
+      color: $lightModeText;
+      background-color: $lightElementBackground;
+      box-shadow: 0 0 8px $lightShadow;
+    }
+    
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__icon {
+    width: 12px;
+  }
+
+  &__items {
+    position: absolute;
+    top: 62px;
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    padding: 10px 20px;
+    border-radius: 5px;
+
+    &--dark {
+      background-color: $darkElementBackground;
+      box-shadow: 0 0 8px $darkShadow;
+    }
+    
+    &--light {
+      background-color: $lightElementBackground;
+      box-shadow: 0 0 8px $lightShadow;
+    }
+  }
+
+  &__item {
+    text-align: left;
+    margin: 5px 0;
+    border: none;
+    outline: none;
+    width: max-content;
+    
+    &--dark {
+      color: $darkModeText;
+      background-color: $darkElementBackground;
+    }
+    
+    &--light {
+      color: $lightModeText;
+      background-color: $lightElementBackground;
+    }
+  
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
+
+

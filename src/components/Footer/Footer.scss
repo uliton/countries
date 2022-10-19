@@ -1,0 +1,13 @@
+.footer {
+  padding: 12px;
+
+  &--dark {
+    background-color: $darkElementBackground;
+    box-shadow: 0 0 8px $darkShadow;
+  }
+  
+  &--light {
+    background-color: $lightElementBackground;
+    box-shadow: 0 0 8px $lightShadow;
+  }
+}

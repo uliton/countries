@@ -1,0 +1,61 @@
+.input {
+  display: flex;
+  align-items: center;
+  padding: 20px 40px;
+  margin: 30px 0;
+  gap: 20px;
+  border-radius: 5px;
+  min-width: 315px;
+  max-width: 450px;
+
+  &--dark {
+    background-color: $darkElementBackground;
+    box-shadow: 0 0 8px $darkShadow;
+  }
+
+  &--light {
+    background-color: $lightElementBackground;
+    box-shadow: 0 0 8px $lightShadow;
+  }
+
+  @include on990 {
+    width: 450px;
+  }
+
+  &__lable {
+    display: flex;
+    align-items: center;
+  }
+
+  &__image {
+    width: 20px;
+  }
+
+  &__input {
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: inherit;
+    color: $darkModeText;
+
+    &--dark {
+      color: $darkModeText;
+
+      &:auto {
+        background-color: $darkElementBackground;
+      }
+
+      &::placeholder {
+        color: $darkModeText;
+      }
+    }
+  
+    &--light {
+      color: $lightModeText;
+
+      &::placeholder {
+        color: $lightModeText;
+      }
+    }
+  }
+}

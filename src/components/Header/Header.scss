@@ -1,0 +1,56 @@
+.header {
+  padding: 30px 0;
+
+  &--dark {
+    background-color: $darkElementBackground;
+    box-shadow: 0 0 8px $darkShadow;
+  }
+
+  &--light {
+    background-color: $lightElementBackground;
+    box-shadow: 0 0 8px $lightShadow;
+  }
+
+  &__container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    font-weight: bold;
+  }
+
+  &__mode {
+    gap: 8px;
+  }
+}
+
+.mode {
+  display: flex;
+  align-items: center;
+  border: none;
+  outline: none;
+
+  &--dark {
+    background-color: $darkElementBackground;
+    color: $darkModeText;
+  }
+
+  &--light {
+    background-color: $lightElementBackground;
+    color: $lightModeText;
+  }
+
+  &:hover {
+    cursor: pointer;
+  }
+
+  &__image {
+    width: 14px;
+  }
+}
+
+.preloader {
+  width: 60px;
+  margin-bottom: 20px;
+}

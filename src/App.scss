@@ -1,0 +1,65 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  text-align: center;
+  min-height: 100vh;
+  gap: 150px;
+
+  &--dark {
+    color: $darkModeText;
+    background-color: $darkMainBackground;
+  }
+
+  &--light {
+    color: $lightModeText;
+    background-color: $lightMainBackground;
+  }
+
+  &__utils {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+
+    @include on680 {
+      margin: 10px 0 40px;
+    }
+
+    @include on990 {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: 20px 0 50px;
+    }
+
+    @include on1440 {
+      margin: 30px 0 60px;
+    }
+  }
+
+  &__countries {
+    display: grid;
+    grid-template-columns: $previewCountryWidth;
+    row-gap: 50px;
+    justify-content: center;
+
+    @include on680 {
+      grid-template-columns: repeat(2, $previewCountryWidth);
+      justify-content: space-around;
+    }
+
+    @include on990 {
+      grid-template-columns: repeat(3, $previewCountryWidth);
+    }
+
+    @include on1440 {
+      grid-template-columns: repeat(4, $previewCountryWidth);
+      justify-content: space-between;
+    }
+  }
+
+  &__service-text {
+    text-align: center;
+    margin: auto;
+  }
+}

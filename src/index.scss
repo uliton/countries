@@ -1,0 +1,13 @@
+@import './utils/variables';
+@import './utils/mixins';
+@import './utils/reset';
+@import './utils/noralize';
+@import './utils/container';
+
+@import './App.scss';
+@import './components/Header/Header.scss';
+@import './components/Input/Input.scss';
+@import './components/Select/Select.scss';
+@import './components/PreViewCountry/PreViewCountry.scss';
+@import './components/FullCountryInfo/FullCountryInfo.scss';
+@import './components/Footer/Footer.scss';

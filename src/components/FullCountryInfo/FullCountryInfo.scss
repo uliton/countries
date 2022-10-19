@@ -1,0 +1,148 @@
+.full-info {
+  max-width: 700px;
+  font-size: 16px;
+
+  @include on1100 {
+    max-width: 1440px;
+  }
+
+  &__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin: 40px 0;
+    padding: 10px 30px;
+    border: none;
+    border-radius: 4px;
+    
+    &--dark {
+      color: $darkModeText;
+      background-color: $darkElementBackground;
+      box-shadow: 0 0 8px $darkShadow;
+    }
+    
+    &--light {
+      color: $lightModeText;
+      background-color: $lightElementBackground;
+      box-shadow: 0 0 8px $lightShadow;
+    }
+
+    @include on680 {
+      margin: 50px 0;
+    }
+
+    @include on990 {
+      margin: 60px 0;
+    }
+
+    @include on1440 {
+      margin: 70px 0;
+    }
+
+    &--arrow {
+      width: 18px;
+    }
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+
+  &__container {
+    @include on1100 {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      justify-content: space-between;
+      gap: 50px;
+    }
+  }
+}
+
+.info-wrapper {
+  &__flag {
+    width: 100%;
+    margin-bottom: 40px;
+  }
+
+  &__container {
+    margin: auto 0;
+
+    &--name {
+      font-weight: 800;
+      font-size: 22px;
+      text-align-last: left;
+      margin-bottom: 30px;
+    }
+
+    &--sections {
+      @include on1100 {
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+
+    &--section {
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.section {
+  text-align: left;
+
+  &__item {
+    margin-bottom: 8px;
+
+    &--borders {
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+
+      @include on1100 {
+        display: grid;
+        grid-template-columns: min-content auto;
+        gap: 12px;
+      }
+    }
+  }
+
+  &__title {
+    width: max-content;
+    font-weight: 600;
+    object-position: top;
+  }
+
+  &__buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: -4px;
+
+    &--button {
+      padding: 8px 12px;
+      border: none;
+      border-radius: 4px;
+      
+      &--dark {
+        color: $darkModeText;
+        background-color: $darkElementBackground;
+        box-shadow: 0 0 8px $darkShadow;
+      }
+      
+      &--light {
+        color: $lightModeText;
+        background-color: $lightElementBackground;
+        box-shadow: 0 0 8px $lightShadow;
+      }
+
+      &:hover {
+        cursor: pointer;
+      }
+    }
+
+    &--text {
+      margin-top: 4px;
+    }
+  }
+}

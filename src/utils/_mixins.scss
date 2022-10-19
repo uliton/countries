@@ -1,0 +1,23 @@
+@mixin on680 {
+  @media (min-width: 680px) {
+    @content;
+  }
+}
+
+@mixin on990 {
+  @media (min-width: 990px) {
+    @content;
+  }
+}
+
+@mixin on1100 {
+  @media (min-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin on1440 {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
