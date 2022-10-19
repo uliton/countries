@@ -44,7 +44,9 @@ export const Header = () => {
             onClick={handeChangeMode}
           >
             <img src={icon} alt="moon" className="mode__image"/>
-            <p>Dark Mode</p>
+            <p>
+              {mode === 'light' ? 'Light Mode' : 'Dark Mode'}
+            </p>
           </button>
         </div>
       </div>
