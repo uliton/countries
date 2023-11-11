@@ -152,7 +152,7 @@ export const App:React.FC = () => {
         }
       </div>
 
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 }
