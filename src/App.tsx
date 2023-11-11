@@ -90,9 +90,9 @@ export const App:React.FC = () => {
   return (
     <div className={classNames('app', {'app--dark': mode === 'dark', 'app--light': mode === 'light'})}>
       <div>
-        <div className="app__header">
+        <header className="app__header">
           <Header />
-        </div>
+        </header>
 
         {countryDetailsStatus && countryDetails
           ? (
