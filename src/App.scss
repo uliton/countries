@@ -6,12 +6,12 @@
   min-height: 100vh;
   gap: 150px;
 
-  &--dark, html {
+  &--dark {
     color: $darkModeText;
     background-color: $darkMainBackground;
   }
 
-  &--light, html {
+  &--light {
     color: $lightModeText;
     background-color: $lightMainBackground;
   }
